@@ -1,1 +1,25 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Google Docs Writer",
+  "name_for_model": "googleDocsWriter",
+  "description_for_human": "Create and update Google Docs with content from your agentic workflows.",
+  "description_for_model": "Plugin to create and write content into a Google Doc using the Google Docs API. Useful for saving outputs from workflows, summarizations, or reports.",
+  "auth": {
+    "type": "oauth",
+    "authorization_url": "https://accounts.google.com/o/oauth2/v2/auth",
+    "token_url": "https://oauth2.googleapis.com/token",
+    "scopes": [
+      "https://www.googleapis.com/auth/documents",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://coll-carr.github.io/UXR-doc-writer/.well-known/openapi.yaml",
+    "has_user_authentication": true
+  },
+  "logo_url": "https://coll-carr.github.io/UXR-doc-writer/logo.png",
+  "contact_email": "your@email.com",
+  "legal_info_url": "https://coll-carr.github.io/UXR-doc-writer/legal.html"
+}
 
