@@ -5,9 +5,17 @@ info:
   version: 1.0.0
 
 servers:
-  - url: https://docs.googleapis.com
+  - url: https://coll-carr.github.io/UXR-doc-writer
 
 paths:
+  /:
+    get:
+      operationId: rootPing
+      summary: Dummy endpoint for validation
+      responses:
+        '200':
+          description: OK
+
   /v1/documents:
     post:
       operationId: createDocument
